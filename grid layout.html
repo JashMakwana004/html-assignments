@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .main{
+              display: grid;
+              grid-template-rows: 100px 200px 100px 100px;
+              grid-template-columns:1fr 1fr 1fr ;
+              grid-gap:10px;
+        }
+        .header{
+            background-color: blue;
+            grid-column: 1/-1;
+
+        }
+        .menu{
+            background-color: aqua;
+            grid-row: 2/3;
+        }
+        .mains{
+            background-color: rgb(12, 211, 42);
+            grid-row: 2/4;
+        }
+        .ad1{
+            background-color: aquamarine;
+            grid-row: 2/4;
+        }
+        .ad2{
+             background-color: blueviolet;
+             grid-row: 3/4;
+        }
+        .footer{
+             background-color: rgb(223, 60, 23);
+             grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body style="background-color: yellow;">
+    <div class="main" align="center" style="font-size: 35px;color: black;line-height: 95px;">
+        <div class="header">jash</div>
+        <div class="menu" style="line-height: 200px;">yash</div>
+        <div class="mains" style="line-height: 300px;">eric</div>
+        <div class="ad1" style="line-height: 300px;">mihir</div>
+        <div class="ad2" >rahul</div>
+        <div class="footer">dherya</div>
+
+    </div>
+</body>
+</html>
