@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jash {
+            display: grid;
+            grid-template-rows: 200px 150px 150px 200px;
+            grid-template-columns: repeat(2, 1fr)300px;
+            grid-gap: 15px;
+            background-color: aqua;
+            border: 15px coral;
+        }
+        
+        .Header {
+            background-color: lightsalmon;
+            grid-column: 1/-1;
+        }
+        
+        .Menu {
+            background-color:red;
+            grid-row: 2/3;
+        }
+        
+        .AD2 {
+            background-color:royalblue;
+            grid-row: 3/4;
+        }
+        
+        .Main {
+            background-color:chocolate;
+            grid-row: 2/4;
+        }
+        
+        .AD1 {
+            background-color: lightblue;
+            grid-row: 2/4;
+        }
+        
+        .Footer {
+            background-color: lightpink;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jash">
+        <div class="Header">Header</div>
+        <div class="Menu">Menu</div>
+        <div class="AD2">AD2</div>
+
+        <div class="Main">Main</div>
+        <div class="AD1">AD1</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+
+</html>
